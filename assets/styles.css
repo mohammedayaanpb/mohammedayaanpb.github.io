@@ -55,7 +55,6 @@ h1 { font-size: clamp(30px, 3.2vw, 38px); line-height: 1.12; font-weight: 500; l
 .experience-description ul { padding-left: 18px; }
 .experience-description li + li { margin-top: 6px; }
 .experience-description a { display: inline-flex; align-items: center; min-height: 44px; }
-.explore-work { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; min-height: 44px; margin-top: 24px; font: 12px/1.5 'Courier New', monospace; text-decoration: none; color: var(--muted); }
 main > section:not(.profile), .section-bg-inner { padding-block: 34px 38px; border-top: 1px solid var(--ink); }
 main > section > h2, .section-bg-inner > h2 { font: 400 13px/1.5 'Courier New', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 28px; }
 .cards { display: grid; grid-template-columns: minmax(0, 1fr); }
