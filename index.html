@@ -202,9 +202,19 @@
         }
 
         .research-card {
-            display: block;
+            display: grid;
+            grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+            align-items: center;
+            gap: 2rem;
             color: inherit;
             text-decoration: none;
+        }
+
+        .research-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
         }
 
         .research-card .project-link {
@@ -350,6 +360,17 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .research-card {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .research-image {
+                max-width: 380px;
+                margin-inline: auto;
             }
         }
 
@@ -499,15 +520,18 @@
         <h2 id="research-heading">Research</h2>
         <div class="cards">
             <a class="card research-card" href="https://link.springer.com/chapter/10.1007/978-3-031-93703-3_4" aria-labelledby="ghost-nets-title">
-                <span class="card-tag">Conference Paper</span>
-                <h3 id="ghost-nets-title">Detection and Monocular Depth Estimation of Ghost Nets</h3>
-                <p class="meta">Mohammed Ayaan &amp; R. Naveen Raj &middot; CVIP 2024 &middot; Springer</p>
-                <ul>
-                    <li>Integrated YOLOv5 and MiDaS for ghost-net detection and monocular depth estimation.</li>
-                    <li>Fine-tuned ResNet50 via transfer learning, achieving a validation F1 score of 0.9111 on ghost-net images.</li>
-                    <li>Compared MiDaS, WaterMono and GCNDepth using qualitative depth maps; incorporated wavelength-dependent attenuation into underwater depth estimation.</li>
-                </ul>
-                <span class="project-link">Read paper &rarr;</span>
+                <img class="research-image" src="assets/research/ghost-net-detection-depth.png" alt="Two underwater ghost-net examples showing the original images, detection bounding boxes, and monocular depth maps" width="927" height="1117" loading="lazy" decoding="async">
+                <div class="research-content">
+                    <span class="card-tag">Conference Paper</span>
+                    <h3 id="ghost-nets-title">Detection and Monocular Depth Estimation of Ghost Nets</h3>
+                    <p class="meta">Mohammed Ayaan &amp; R. Naveen Raj &middot; CVIP 2024 &middot; Springer</p>
+                    <ul>
+                        <li>Integrated YOLOv5 and MiDaS for ghost-net detection and monocular depth estimation.</li>
+                        <li>Fine-tuned ResNet50 via transfer learning, achieving a validation F1 score of 0.9111 on ghost-net images.</li>
+                        <li>Compared MiDaS, WaterMono and GCNDepth using qualitative depth maps; incorporated wavelength-dependent attenuation into underwater depth estimation.</li>
+                    </ul>
+                    <span class="project-link">Read paper &rarr;</span>
+                </div>
             </a>
         </div>
     </section>
