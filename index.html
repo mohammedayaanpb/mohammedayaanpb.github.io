@@ -501,6 +501,7 @@
                 <li><a href="#research">Research</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -587,20 +588,6 @@
     <section id="research" aria-labelledby="research-heading">
         <h2 id="research-heading">Research</h2>
         <div class="cards">
-            <a class="card research-card" href="https://link.springer.com/chapter/10.1007/978-3-031-93703-3_4" aria-labelledby="ghost-nets-title">
-                <img class="research-image" src="assets/research/ghost-net-detection-depth.png" alt="Two underwater ghost-net examples showing the original images, detection bounding boxes, and monocular depth maps" width="927" height="1117" loading="lazy" decoding="async">
-                <div class="research-content">
-                    <span class="card-tag">Conference Paper</span>
-                    <h3 id="ghost-nets-title">Detection and Monocular Depth Estimation of Ghost Nets</h3>
-                    <p class="meta">Mohammed Ayaan &amp; R. Naveen Raj &middot; CVIP 2024 &middot; Springer</p>
-                    <ul>
-                        <li>Integrated YOLOv5 and MiDaS for ghost-net detection and monocular depth estimation.</li>
-                        <li>Fine-tuned ResNet50 via transfer learning, achieving a validation F1 score of 0.9111 on ghost-net images.</li>
-                        <li>Compared MiDaS, WaterMono and GCNDepth using qualitative depth maps; incorporated wavelength-dependent attenuation into underwater depth estimation.</li>
-                    </ul>
-                    <span class="project-link">Read paper &rarr;</span>
-                </div>
-            </a>
             <article class="card" id="task-driven-underwater-enhancement" aria-labelledby="task-driven-enhancement-title">
                 <span class="card-tag">Ongoing</span>
                 <h3 id="task-driven-enhancement-title">Task-Driven Underwater Image Enhancement</h3>
@@ -628,6 +615,20 @@
                     <figcaption>YOLO detection results before and after enhancement. Click an image to view it at full resolution.</figcaption>
                 </figure>
             </article>
+            <a class="card research-card" href="https://link.springer.com/chapter/10.1007/978-3-031-93703-3_4" aria-labelledby="ghost-nets-title">
+                <img class="research-image" src="assets/research/ghost-net-detection-depth.png" alt="Two underwater ghost-net examples showing the original images, detection bounding boxes, and monocular depth maps" width="927" height="1117" loading="lazy" decoding="async">
+                <div class="research-content">
+                    <span class="card-tag">Conference Paper</span>
+                    <h3 id="ghost-nets-title">Detection and Monocular Depth Estimation of Ghost Nets</h3>
+                    <p class="meta">Mohammed Ayaan &amp; R. Naveen Raj &middot; CVIP 2024 &middot; Springer</p>
+                    <ul>
+                        <li>Integrated YOLOv5 and MiDaS for ghost-net detection and monocular depth estimation.</li>
+                        <li>Fine-tuned ResNet50 via transfer learning, achieving a validation F1 score of 0.9111 on ghost-net images.</li>
+                        <li>Compared MiDaS, WaterMono and GCNDepth using qualitative depth maps; incorporated wavelength-dependent attenuation into underwater depth estimation.</li>
+                    </ul>
+                    <span class="project-link">Read paper &rarr;</span>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -635,15 +636,16 @@
         <div class="section-bg-inner" id="projects">
             <h2>Projects</h2>
             <div class="cards">
-                <div class="card">
-                    <span class="card-tag">Ongoing</span>
-                    <h3>AUV Localization via Multi-Sensor Fusion</h3>
+                <article class="card" id="marine-mammal-classification">
+                    <span class="card-tag">GitHub</span>
+                    <h3>Spectral Graph Methods for Marine Mammal Vocalization Classification</h3>
+                    <p class="meta">UMN &middot; MATH 5466 &middot; Spring 2026</p>
                     <ul>
-                        <li>Designed and implemented a 15-state EKF from scratch for 6-DOF AUV pose estimation, fusing IMU (98 Hz), DVL, depth, and magnetometer data via a multi-rate asynchronous correction architecture.</li>
-                        <li>Achieved 2.6 cm position accuracy using Joseph form covariance updates for numerical stability.</li>
-                        <li>Currently implementing an Unscented Kalman Filter for comparison against EKF.</li>
+                        <li>Built acoustic-feature graphs for semi-supervised classification of four marine mammal families and 17 dolphin species.</li>
+                        <li>Implemented label propagation, Laplacian regularization, and spectral clustering, with ResNet-18 classification and autoencoder clustering baselines.</li>
                     </ul>
-                </div>
+                    <a class="project-link" href="https://github.com/mohammedayaanpb/Spectral-Graph-Methods-for-Marine-Mammal-Vocalization-Classification">View on GitHub &rarr;</a>
+                </article>
                 <div class="card">
                     <span class="card-tag">GitHub</span>
                     <h3>Image-Enhancement for ORB-SLAM3 in Underwater Environments</h3>
@@ -666,15 +668,6 @@
                     </ul>
                     <a class="project-link" href="https://github.com/mohammedayaanpb/Class-aware-seam-carving-for-content-aware-image-retargeting">View on GitHub &rarr;</a>
                 </div>
-                <div class="card">
-                    <span class="card-tag">GitHub</span>
-                    <h3>Faulty Bearing Detection in Induction Motors</h3>
-                    <ul>
-                        <li>Designed a 1-D CNN architecture for fault detection in induction motor bearings using a triaxial vibration dataset.</li>
-                        <li>Achieved training accuracy of 0.9991 and test accuracy of 0.9835.</li>
-                    </ul>
-                    <a class="project-link" href="https://github.com/mohammedayaanpb/Faulty-Bearing-Detection-in-Induction-Motors-Using-Triaxial-Vibration-Dataset">View on GitHub &rarr;</a>
-                </div>
                 <article class="card" id="underwater-photogrammetry">
                     <a href="https://github.com/mohammedayaanpb/underwater-photogrammetry" aria-label="View the underwater photogrammetry project on GitHub">
                         <img class="project-image" src="assets/underwater-photogrammetry/artifact-3.jpg" alt="Textured 3D reconstruction of an underwater archaeological artifact with a central opening" width="720" height="540" loading="lazy" decoding="async">
@@ -688,16 +681,15 @@
                     </ul>
                     <a class="project-link" href="https://github.com/mohammedayaanpb/underwater-photogrammetry">View on GitHub &rarr;</a>
                 </article>
-                <article class="card" id="marine-mammal-classification">
+                <div class="card">
                     <span class="card-tag">GitHub</span>
-                    <h3>Spectral Graph Methods for Marine Mammal Vocalization Classification</h3>
-                    <p class="meta">UMN &middot; MATH 5466 &middot; Spring 2026</p>
+                    <h3>Faulty Bearing Detection in Induction Motors</h3>
                     <ul>
-                        <li>Built acoustic-feature graphs for semi-supervised classification of four marine mammal families and 17 dolphin species.</li>
-                        <li>Implemented label propagation, Laplacian regularization, and spectral clustering, with ResNet-18 classification and autoencoder clustering baselines.</li>
+                        <li>Designed a 1-D CNN architecture for fault detection in induction motor bearings using a triaxial vibration dataset.</li>
+                        <li>Achieved training accuracy of 0.9991 and test accuracy of 0.9835.</li>
                     </ul>
-                    <a class="project-link" href="https://github.com/mohammedayaanpb/Spectral-Graph-Methods-for-Marine-Mammal-Vocalization-Classification">View on GitHub &rarr;</a>
-                </article>
+                    <a class="project-link" href="https://github.com/mohammedayaanpb/Faulty-Bearing-Detection-in-Induction-Motors-Using-Triaxial-Vibration-Dataset">View on GitHub &rarr;</a>
+                </div>
             </div>
         </div>
     </div>
