@@ -201,6 +201,10 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
 
+        #research .cards {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
         .research-card {
             display: grid;
             grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
@@ -533,6 +537,14 @@
                     <span class="project-link">Read paper &rarr;</span>
                 </div>
             </a>
+            <article class="card" id="task-driven-underwater-enhancement" aria-labelledby="task-driven-enhancement-title">
+                <span class="card-tag">Ongoing</span>
+                <h3 id="task-driven-enhancement-title">Task-Driven Underwater Image Enhancement</h3>
+                <ul>
+                    <li>Working on underwater image restoration for robust downstream robotic tasks such as object detection and SLAM.</li>
+                    <li>This work is currently in progress for my master's thesis.</li>
+                </ul>
+            </article>
         </div>
     </section>
 
