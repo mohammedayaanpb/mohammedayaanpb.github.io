@@ -28,14 +28,15 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 
 .eyebrow, .record-date, .file-type, .card-tag, .section-heading-note { font-family: 'Courier New', monospace; }
 .eyebrow { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
 h1 { font-size: clamp(30px, 3.2vw, 38px); line-height: 1.12; font-weight: 500; letter-spacing: -1.2px; }
-.profile-intro { margin-block: 16px; font-size: 15px; line-height: 1.65; }
-.profile-email { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; overflow-wrap: anywhere; }
+.profile-intro { margin-bottom: 24px; font-size: 15px; line-height: 1.65; }
+.profile-intro p + p { margin-top: 12px; }
+.profile-email { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; font-size: 15px; overflow-wrap: anywhere; }
 .profile-links { gap: 4px 18px; }
 .profile-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; }
 .file-type { font-size: 10px; text-decoration: none; }
-.profile-record h2 { font: 400 12px/1.5 'Courier New', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 12px; }
-.education { padding-bottom: 24px; }
-.education-entry { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-top: 12px; }
+.profile h2 { font: 400 12px/1.5 'Courier New', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 12px; }
+.education { grid-column: 1 / -1; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.education-entry { margin-top: 12px; }
 .education-entry h3 { font-size: 15px; font-weight: 600; }
 .education-entry p:not(.record-date) { font-size: 13px; color: var(--muted); }
 .status { font-size: 11px; font-weight: 400; color: var(--muted); margin-left: 6px; white-space: nowrap; }
@@ -110,7 +111,7 @@ footer p { border-top: 1px solid var(--line); padding-block: 20px 32px; font-siz
     .portrait { width: 116px; height: 116px; margin: 0; }
     h1 { font-size: 34px; }
     .profile-record { margin-top: 28px; }
-    .education-entry { display: flex; }
+    .education-entry { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
     .experience-entry summary { grid-template-columns: 10px minmax(0, 1fr) auto; }
     .experience-entry .record-date { grid-column: auto; padding-top: 3px; }
     .research-card { grid-template-columns: 160px minmax(0, 1fr); gap: 24px; }
