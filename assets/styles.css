@@ -81,6 +81,7 @@ figcaption { font-size: 12px; color: var(--muted); margin-top: 10px; }
 .research-card:hover h3, .research-card:focus-visible h3 { text-decoration: underline; text-underline-offset: 5px; }
 .research-image { width: 100%; height: auto; display: block; }
 .project-link { display: inline-flex; min-height: 44px; align-items: center; font-size: 14px; margin-top: 8px; color: var(--accent); text-decoration: underline; }
+.project-actions { display: flex; flex-wrap: wrap; column-gap: 24px; }
 #projects .card { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 0 36px; }
 #projects .card > * { grid-column: 1 / -1; }
 #projects .card:has(.project-image) > * { grid-column: 1; }
